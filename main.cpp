@@ -4,10 +4,9 @@ using namespace std;
 
 // name: rose hall
 // date: 03.xx.20
-// shunting yard algorithm.
+// shunting yard algorithm. will take an infix equation and be able to translate it to prefix or postfix using a tree.
 
-// node struct for stack and queue linked lists.
-
+// function prototypes
 
 int main() {
   // base variables
@@ -16,10 +15,13 @@ int main() {
   
  
   // instructions on how to input the equation
-  cout << "this is where the instructions for equation input will go." << endl;
-  // always input in infix, spaces between every token (tokens being numbers and operators)
-  
-  // take input for equation
+  cout << "this program is a shunting yard algorithm.\nit will take in an input equation in infix notation, use the algorithm to build a binary node tree, and use that tree to translate to prefix or postfix notation." << endl;
+
+  // prompt for user input
+  cout << "please input your equation. please make sure there are spaces between every operator and number.\nexample input: '20 + 4 / 7'\nALWAYS INPUT IN INFIX" << endl;
+
+  // take user input for equation
+  cin.getline(eqInput,200);
   
   // parse input into numbers and operators
 
